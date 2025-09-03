@@ -1,16 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ThreadGuard;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeTest;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
-import java.util.PriorityQueue;
+
 
 
 public class SeleniumWebSignupTest {
@@ -29,8 +24,8 @@ public class SeleniumWebSignupTest {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://selenium-blog.herokuapp.com");
         driver.findElement(By.xpath("/html/body/div[2]/div/a[2]")).click();
-        driver.findElement(By.id("user_username")).sendKeys("Ayodeji93375757285");
-        driver.findElement(By.id("user_email")).sendKeys("Ayodejiadeyemi609306@gmail.com");
+        driver.findElement(By.id("user_username")).sendKeys("Ayomide30");
+        driver.findElement(By.id("user_email")).sendKeys("Ayodejiadeyemi4532@gmail.com");
         driver.findElement(By.id("user_password")).sendKeys("Joyiscomin53");
         driver.findElement(By.id("submit")).click();
         driver.findElement(By.xpath("/html/body/div[2]/div[1]/ul/div/div/li[1]/a")).click();
