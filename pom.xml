@@ -41,17 +41,12 @@
     </dependency>
 
     <dependency>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-testng</artifactId>
-        <scope>test</scope>
-    </dependency>
     <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
     <dependency>
         <groupId>io.github.bonigarcia</groupId>
         <artifactId>webdrivermanager</artifactId>
         <version>6.2.0</version>
     </dependency>
-
 
 </dependencies>
 </project>
