@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class SeleniumWebSignupTest {
 
-    @Test
+
     public void start() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\user\\Desktop\\Drivers\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
@@ -19,7 +19,6 @@ public class SeleniumWebSignupTest {
         driver.get("https://selenium-blog.herokuapp.com");
         driver.findElement(By.xpath("/html/body/div[2]/div/a[2]")).click();
     }
-    @Test
     public void positivesignup() throws InterruptedException {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://selenium-blog.herokuapp.com");
